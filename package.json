@@ -1,0 +1,24 @@
+{
+  "name": "meeting-summarizer",
+  "version": "1.0.0",
+  "description": "Meeting Summarizer - AI-powered meeting transcription and summarization",
+  "scripts": {
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "build:frontend": "cd frontend && npm run build",
+    "start:prod": "npm run build:frontend && cd backend && npm start",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "meeting",
+    "summarizer",
+    "ai",
+    "transcription"
+  ],
+  "author": "",
+  "license": "ISC"
+}
